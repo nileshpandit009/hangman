@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
+require 'net/http'    # Used for making api calls
+require 'json'        # Used to parse JSON response from api
+require 'io/console'  # Used for console operations
+
 # This is a simple hangman console game
 class Hangman
-  require 'net/http'    # Used for making api calls
-  require 'json'        # Used to parse JSON response from api
-  require 'io/console'  # Used for console operations
-
   # Time limit can be set while creating the instance.
   # This functionality is kept in case
   # we want to implement difficulty modes later.
